@@ -7,11 +7,12 @@
   "type": "module",
   "main": "src/serverExterna.js",
   "scripts": {
-    "dev": "tsx src/server.ts",
+    "dev": "tsx src/serverExterna.ts",
     "build": "tsc",
     "start": "tsc && node dist/serverExterna.js"
   },
   "dependencies": {
+    "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "mongoose": "^9.6.2",
     "paillier-bigint": "^3.4.3",
