@@ -182,7 +182,7 @@
         status.className = 'status';
 
         try {
-          const res  = await fetch('http://localhost:3001/stats');
+          const res  = await fetch('/stats');
           const data = await res.json();
           out.textContent = JSON.stringify(data, null, 2);
           renderGrid(data);
